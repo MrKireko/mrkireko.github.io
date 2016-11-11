@@ -40,7 +40,6 @@ body {
 
 #portfolio {
     background-color: darkorange;
-/*    background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);*/
     background: rgba(0,0,0,0);
     display: inline-block;
     width: 85%;
@@ -52,7 +51,11 @@ body {
 }
 
 #portfoliobg2 {
+    background-color: darkorange;
     background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);
+    background: -webkit-linear-gradient(to right, #ff9800, #e91e63, #00bcd4);
+    background: -o-linear-gradient(, #ff9800, #e91e63, #00bcd4);
+    background: -moz-linear-gradient(right, #ff9800, #e91e63, #00bcd4);
 /*    background: red;*/
     display: inline-block;
 /*    position: relative;*/
@@ -66,8 +69,6 @@ body {
 }
 
 #portfoliobg {
-/*    background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);*/
-/*    background: red;*/
     opacity: 0;
     display: inline-block;
     position: relative;
@@ -80,6 +81,9 @@ body {
 
 #portfoliobg.left {
     background: linear-gradient(to right, #ef6c00, #e91e63, #00bcd4);
+    background: -webkit-linear-gradient(to right, #ef6c00, #e91e63, #00bcd4);
+    background: -o-linear-gradient(to right, #ef6c00, #e91e63, #00bcd4);
+    background: -moz-linear-gradient(to right, #ef6c00, #e91e63, #00bcd4);
     transform: translate(0, -100%);
     margin-top: -1px;
     opacity: 0;
@@ -89,6 +93,9 @@ body {
 
 #portfoliobg.mid {
     background: linear-gradient(to right, #ff9800, #ad1457, #00bcd4);
+    background: -webkit-linear-gradient(to right, #ff9800, #ad1457, #00bcd4);
+    background: -o-linear-gradient(, #ff9800, #ad1457, #00bcd4);
+    background: -moz-linear-gradient(right, #ff9800, #ad1457, #00bcd4);
     transform: translate(0, -200%);
     margin-top: -2px;
     opacity: 0;
@@ -98,6 +105,9 @@ body {
 
 #portfoliobg.right {
     background: linear-gradient(to right, #ff9800, #e91e63, #00838f);
+    background: -webkit-linear-gradient(to right, #ff9800, #e91e63, #00838f);
+    background: -o-linear-gradient(, #ff9800, #e91e63, #00838f);
+    background: -moz-linear-gradient(right, #ff9800, #e91e63, #00838f);
     transform: translate(0, -300%);
     margin-top: -5px;
     opacity: 0;
