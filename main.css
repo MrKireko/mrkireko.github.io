@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #03a9f4;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: #fafafa;
+    display: inline-block;
+    width: 62.5vw;
+    height: 83.3vh;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.titles {
+    font-weight: 700;
+    opacity: .87;
+    text-transform: uppercase;
+    padding-top: 2.5em;
+}
+
+.titles .title {
+    font-size: 5.5em;
+    color:#212121;
+}
+
+.titles .subtitle {
+    font-size: 4em;
+    color: #616161;
+}
+
+#portfolio {
+    background-color: darkorange;
+/*    background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);*/
+    background: rgba(0,0,0,0);
+    display: inline-block;
+    width: 85%;
+    height: 60%;
+    margin-top: 2em;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+
+#portfoliobg2 {
+    background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);
+/*    background: red;*/
+    display: inline-block;
+/*    position: relative;*/
+    position:absolute;
+    float:none;
+    width: 85%;
+    height: 60%;
+    z-index: -4;
+    margin-top: 2em;
+    transform: translateX(-100%);
+}
+
+#portfoliobg {
+/*    background: linear-gradient(to right, #ff9800, #e91e63, #00bcd4);*/
+/*    background: red;*/
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+/*    position:absolute;*/
+    float:none;
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s;
+}
+
+#portfoliobg.left {
+    background: linear-gradient(to right, #ef6c00, #e91e63, #00bcd4);
+    transform: translate(0, -100%);
+    margin-top: -1px;
+    opacity: 0;
+    transition: opacity .2s;
+    z-index: -1;
+}
+
+#portfoliobg.mid {
+    background: linear-gradient(to right, #ff9800, #ad1457, #00bcd4);
+    transform: translate(0, -200%);
+    margin-top: -2px;
+    opacity: 0;
+    transition: opacity .2s;
+    z-index: -2;
+}
+
+#portfoliobg.right {
+    background: linear-gradient(to right, #ff9800, #e91e63, #00838f);
+    transform: translate(0, -300%);
+    margin-top: -5px;
+    opacity: 0;
+    transition: opacity .2s;
+    z-index: -3;
+}
+
+#portfolio .text {
+    font-size: 3em;
+    height: 100%;
+    display: block;
+    margin-top: 22vh;
+    display: relative;
+}
+
+#portfolio .item {
+    width: 33%;
+    height: 50vh;
+    font-weight: 700;
+    color: #fff;
+    display: inline;
+}
+
+#portfolio #left {
+    float: left;
+}
+
+#portfolio #mid {
+    float: left;
+}
+
+#portfolio #right {
+    float: right;
+}
+
+#portfolio #right .text {
+    margin-top: 19vh;
+}
